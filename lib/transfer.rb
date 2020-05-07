@@ -24,8 +24,5 @@ class Transfer
   def close_account
     @status = "closed"
   end
-  def self.new(account, name, status, balance)
-    account = Transfer.new(name,status,balance)
-  end 
 end
 end
