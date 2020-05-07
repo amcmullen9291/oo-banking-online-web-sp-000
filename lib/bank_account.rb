@@ -1,3 +1,5 @@
+require_relative 'transfer'
+
 class BankAccount < Transfer
   attr_accessor :balance, :status
   attr_reader :name
