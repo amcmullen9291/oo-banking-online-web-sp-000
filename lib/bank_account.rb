@@ -1,13 +1,11 @@
-require_relative 'transfer'
-
-class BankAccount < Transfer
+class BankAccount
   attr_accessor :balance, :status
   attr_reader :name
 
-  def initialize(name)
-    @name = name
-    @balance = 1000
-    @status = "open"
+  def initialize(account, balance = 1000, status = "Pending")
+    @name = account
+    @balance = balance
+    @status = status
   end
 
   def deposit(money)
